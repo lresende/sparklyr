@@ -82,8 +82,4 @@ object SQLUtils {
     val dtObj = getSQLDataType(dataType)
     StructField(name, dtObj, nullable)
   }
-
-  def createStructField(name: String, struct: StructType): StructField = {
-    StructField(name, struct, true)
-  }
 }
